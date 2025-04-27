@@ -98,9 +98,9 @@ const structuredData = [
 
 export default function RootLayout({
   children,
-}: { // Simplified type definition
+}: Readonly<{ // Corrected type definition
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
@@ -111,7 +111,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} // Use the combined array
           strategy="beforeInteractive" // Load early but not blocking
         />
-        <ClientBody>{children}</ClientBody> {/* Restore children rendering */}
+        <ClientBody>{children}</ClientBody>
       </body>
     </html>
   );

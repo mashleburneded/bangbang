@@ -1,4 +1,4 @@
-{`"use client";
+"use client";
 
 import { useEffect } from "react";
 
@@ -6,16 +6,10 @@ export default function ClientBody({
   children,
 }: {
   children: React.ReactNode;
-}): React.ReactElement { // Add explicit return type
-  // Remove any extension-added classes during hydration
+}): React.ReactElement {
   useEffect(() => {
-    // This runs only on the client after hydration
-    document.body.className = "antialiased";
+    document.body.className = "antialiased"; // Or merge with existing classes from layout if needed
   }, []);
 
-  // Render children directly within a fragment, as RootLayout provides the body tag.
-  // suppressHydrationWarning might not be needed here anymore, but can be left if other
-  // hydration warnings specific to children are expected.
   return <>{children}</>;
 }
-`}
