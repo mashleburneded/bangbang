@@ -106,8 +106,8 @@ export default function Home() {
       <section className="relative w-full px-8 sm:px-6 pt-8 sm:pt-10 pb-8 sm:pb-10 bg-black flex flex-wrap justify-center items-stretch gap-4 sm:gap-6 overflow-hidden"> {/* Changed flex direction, added wrap and justify */}
          {/* Added subtle pattern div here */}
          <div className="absolute inset-0 z-0 opacity-[0.02]" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}></div>
-        {/* Card 1: Optimized L3 - Set width for 3-across layout, reduced padding & header size */}
-        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+        {/* Card 1: Optimized L3 - Increased vertical padding */}
+        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl px-2 py-3 sm:px-3 sm:py-4 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed p-2 sm:p-3 to px-2 py-3 sm:px-3 sm:py-4 */}
           {/* Reduced header text size */}
           <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Optimized <span className="text-primary">L3 Architecture</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
           {/* Reduced mobile text size */}
@@ -115,8 +115,8 @@ export default function Home() {
           Application-specific L3 on OP Stack/Base L2, optimized for finance. Features low costs via EigenDA and accelerated L2 finality using ZK validity proofs for high performance.
           </p>
         </div>
-        {/* Card 2: Native CLOB & PoL - Set width for 3-across layout, reduced padding & header size */}
-        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+        {/* Card 2: Native CLOB & PoL - Increased vertical padding */}
+        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl px-2 py-3 sm:px-3 sm:py-4 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed p-2 sm:p-3 to px-2 py-3 sm:px-3 sm:py-4 */}
           {/* Reduced header text size */}
           <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Native <span className="text-primary"> CLOB & PoL</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
           {/* Reduced mobile text size */}
@@ -124,17 +124,17 @@ export default function Home() {
           Performant native CLOB runs entirely on network for efficient, capital-efficient trading. Our Proof-of-Liquidity (PoL) mechanism programmatically incentivizes and measures deep market liquidity using verifiable metrics.
           </p>
         </div>
-         {/* Card 3: Intent-Driven & Connected - Set width for 3-across layout, reduced padding & header size */}
-         <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+         {/* Card 3: Intent-Driven & Connected - Increased vertical padding */}
+         <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl px-2 py-3 sm:px-3 sm:py-4 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed p-2 sm:p-3 to px-2 py-3 sm:px-3 sm:py-4 */}
           {/* Reduced header text size */}
           <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Intent-Driven & <span className="text-primary">Connected</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
           {/* Reduced mobile text size */}
           <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
-          Geass intent engine simplifies transactions: users declare desired outcomes ('what', not 'how') for guaranteed execution. Seamlessly connects to diverse external systems and data via MSAC.
+          Geass engine simplifies transactions: users declare desired outcomes ('what', not 'how') for guaranteed execution. Seamlessly connects to diverse external systems and data via MSAC.
           </p>
         </div>
-         {/* Card 4: MSAC AI Council - Set width for 3-across layout, reduced padding & header size */}
-         <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+         {/* Card 4: MSAC AI Council - Increased vertical padding */}
+         <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl px-2 py-3 sm:px-3 sm:py-4 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed p-2 sm:p-3 to px-2 py-3 sm:px-3 sm:py-4 */}
           {/* Reduced header text size */}
           <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Mobius Sybil <span className="text-primary">Agentic Council</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
           {/* Reduced mobile text size */}
@@ -142,11 +142,11 @@ export default function Home() {
           The Mobius Sybil Agentic Council (MSAC): an intelligent agent middleware layer. Acts as a secure gateway, bridging Catenary L3 with diverse external systems for data exchange/protocol translation.
           </p>
         </div>
-        {/* Card 5: Programed Money - Set width for 3-across layout, reduced padding & header size */}
-        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+        {/* Card 5: Programed Money - Increased vertical padding */}
+        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl px-2 py-3 sm:px-3 sm:py-4 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed p-2 sm:p-3 to px-2 py-3 sm:px-3 sm:py-4 */}
           {/* Reduced header text size */}
           <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Programmable <span className="text-primary">Currencies</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
-          {/* Reduced mobile text size */}
+          {/* Reduced mobsile text size */}
           <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
           Issue programmable, resilient local currencies on Catenary for reliable cross-currency value transfer and representation, bringing the world's diverse economies securely onchain.
           </p>
