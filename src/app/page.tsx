@@ -158,34 +158,34 @@ export default function Home() {
           {/* Use Case Card 1: Cross-Border Settlement - Reverted mobile width */}
           <div className="bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 w-full max-w-xs sm:w-auto flex-1 min-w-[180px] sm:min-w-[200px] shadow-lg flex flex-col items-center text-center gap-1 sm:gap-1.5 backdrop-blur-sm transition duration-300 ease-in-out hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
             {/* Reduced text size */}
-            <span className="uppercase text-[10px] sm:text-[11px] text-primary tracking-wider font-semibold">Cross-Border Settlement</span>
+            <span className="uppercase text-[10px] sm:text-[11px] text-primary tracking-wider font-semibold">For Cross-Border Settlement</span>
             {/* Reduced mobile text size */}
-            <h3 className="font-semibold text-xs sm:text-base text-white leading-snug mt-1">Accelerated Trade Clearance</h3>
+            <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Overcome traditional barriers with near-instant, low-cost cross-border payments.</h3>
             {/* Reduced mobile text size */}
             <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
-              Leverage L3 speed, ZK finality, and Geass intents for near-instant, low-cost international payments, bypassing traditional delays.
+            Our L3 executes atomic settlements, Geass simplifies complex multi-currency flows via the native CLOB, ZK proofs ensure rapid finality, and MSAC bridges to external systems.
             </p>
           </div>
           {/* Use Case Card 2: Asset Tokenization - Reverted mobile width */}
           <div className="bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 w-full max-w-xs sm:w-auto flex-1 min-w-[180px] sm:min-w-[200px] shadow-lg flex flex-col items-center text-center gap-1 sm:gap-1.5 backdrop-blur-sm transition duration-300 ease-in-out hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
             {/* Reduced text size */}
-            <span className="uppercase text-[10px] sm:text-[11px] text-primary tracking-wider font-semibold">Asset Tokenization & Trading</span>
+            <span className="uppercase text-[10px] sm:text-[11px] text-primary tracking-wider font-semibold">For Asset Tokenization & Trading</span>
             {/* Reduced mobile text size */}
-            <h3 className="font-semibold text-xs sm:text-base text-white leading-snug mt-1">Frictionless Asset Trading</h3>
+            <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Unlock liquidity for traditionally illiquid real-world assets like real estate or private debt.</h3>
             {/* Reduced mobile text size */}
             <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
-              Turn real-world assets (bonds, property) into tradable tokens on the native CLOB, verified via MSAC, unlocking liquidity and fractional ownership.
+            Tokenize assets on our L3, leverage MSAC for verifiable links to off-chain data, and enable seamless fractional trading on the high-performance native CLOB.
             </p>
           </div>
           {/* Use Case Card 3: Programmable Finance - Reverted mobile width */}
           <div className="bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 w-full max-w-xs sm:w-auto flex-1 min-w-[180px] sm:min-w-[200px] shadow-lg flex flex-col items-center text-center gap-1 sm:gap-1.5 backdrop-blur-sm transition duration-300 ease-in-out hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
             {/* Reduced text size */}
-            <span className="uppercase text-[10px] sm:text-[11px] text-primary tracking-wider font-semibold">Programmable Finance</span>
+            <span className="uppercase text-[10px] sm:text-[11px] text-primary tracking-wider font-semibold">For Programmable Finance</span>
             {/* Reduced mobile text size */}
-            <h3 className="font-semibold text-xs sm:text-base text-white leading-snug mt-1">Automated Financial Products</h3>
+            <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Build sophisticated, automated financial services directly on Catenary.</h3>
             {/* Reduced mobile text size */}
             <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
-              Utilize native stablecoins and Geass intents to build automated payment streams, escrows, or complex DeFi services directly on the L3.
+            Utilize Geass intents to define complex logic for payment streams, escrows, or custom DeFi protocols, powered by our programmable L3 environment and native stablecoins.
             </p>
           </div>
         </div>
