@@ -94,52 +94,61 @@ export default function Home() {
       <section className="relative w-full flex flex-col items-center pt-16 sm:pt-24 pb-8 sm:pb-12 px-8 sm:px-6 bg-background w-full"> {/* Further increased mobile px */}
         <div className="w-full max-w-2xl lg:max-w-3xl text-center"> {/* Centered text container */}
           <span className="text-primary font-semibold text-xs sm:text-sm uppercase">Why Catenary</span>
-          <h2 className="font-bold text-2xl sm:text-3xl text-white mt-2 mb-3 sm:mb-4">Decentralizing the Monetary Layer</h2>
+          <h2 className="font-bold text-2xl sm:text-3xl text-white mt-2 mb-3 sm:mb-4">Redefining the Monetary Layer</h2>
           {/* Reduced font size by ~25% */}
           <p className="text-white/80 text-sm sm:text-base"> 
-            Traditional cross-border payments are often slow, costly, and complex, especially in emerging markets. Catenary addresses this with a specialized Layer 3 architecture, offering high-speed, low-cost trade settlement, efficient on-chain trading via a native CLOB, and seamless connectivity to existing financial systems through innovative protocols like Geass and MSAC.
+          Move beyond slow, costly, opaque financial rails and nascent innovations that, despite promise, can accelerate dollarization. Our specialized network enables hyper-efficient, near-instant cross-border settlement and clearing of assets. Geass simplifies user intent, MSAC ensures seamless legacy integration, and programmable local currencies foster economic stability. Experience a transparent, high-performant environment, tailored to truly bring global economies onchain.
           </p>
         </div>
       </section>
 
-      {/* Explainer Cards Row - Reduced top/bottom padding */}
-      <section className="relative w-full px-8 sm:px-6 pt-8 sm:pt-10 pb-8 sm:pb-10 bg-black flex flex-col items-center sm:flex-row sm:justify-center sm:items-stretch gap-4 sm:gap-6 overflow-hidden"> {/* Further increased mobile px */}
+      {/* Explainer Cards Row - Use flex-wrap and justify-center */}
+      <section className="relative w-full px-8 sm:px-6 pt-8 sm:pt-10 pb-8 sm:pb-10 bg-black flex flex-wrap justify-center items-stretch gap-4 sm:gap-6 overflow-hidden"> {/* Changed flex direction, added wrap and justify */}
          {/* Added subtle pattern div here */}
          <div className="absolute inset-0 z-0 opacity-[0.02]" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}></div>
-        {/* Card 1: Optimized L3 - Reverted mobile width, kept reduced gap/text */}
-        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 max-w-xs sm:w-auto flex-1 sm:min-w-[200px] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
-          {/* Reduced mobile text size */}
-          <h3 className="font-semibold text-xs sm:text-lg text-white leading-snug">Optimized <span className="text-primary">L3 Architecture</span></h3>
+        {/* Card 1: Optimized L3 - Set width for 3-across layout, reduced padding & header size */}
+        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+          {/* Reduced header text size */}
+          <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Optimized <span className="text-primary">L3 Architecture</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
           {/* Reduced mobile text size */}
           <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
-            Built on the OP Stack settling to Base L2, Catenary offers high TPS, low costs via EigenDA, and fast ZK-powered finality for financial applications.
+          Application-specific L3 on OP Stack/Base L2, optimized for finance. Features low costs via EigenDA and accelerated L2 finality using ZK validity proofs for high performance.
           </p>
         </div>
-        {/* Card 2: Native CLOB & PoL - Reverted mobile width, kept reduced gap/text */}
-        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 max-w-xs sm:w-auto flex-1 sm:min-w-[200px] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
-          {/* Reduced mobile text size */}
-          <h3 className="font-semibold text-xs sm:text-lg text-white leading-snug">Native <span className="text-primary">CLOB & PoL</span></h3>
+        {/* Card 2: Native CLOB & PoL - Set width for 3-across layout, reduced padding & header size */}
+        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+          {/* Reduced header text size */}
+          <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Native <span className="text-primary"> CLOB & PoL</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
           {/* Reduced mobile text size */}
           <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
-            Features an on-chain Central Limit Order Book for efficient trading, incentivized by a Proof-of-Liquidity mechanism for deep, reliable markets.
+          Performant native CLOB runs entirely on network for efficient, capital-efficient trading. Our Proof-of-Liquidity (PoL) mechanism programmatically incentivizes and measures deep market liquidity using verifiable metrics.
           </p>
         </div>
-         {/* Card 3: Intent-Driven & Connected - Reverted mobile width, kept reduced gap/text */}
-         <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 max-w-xs sm:w-auto flex-1 sm:min-w-[200px] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
-          {/* Reduced mobile text size */}
-          <h3 className="font-semibold text-xs sm:text-lg text-white leading-snug">Intent-Driven & <span className="text-primary">Connected</span></h3>
+         {/* Card 3: Intent-Driven & Connected - Set width for 3-across layout, reduced padding & header size */}
+         <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+          {/* Reduced header text size */}
+          <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Intent-Driven & <span className="text-primary">Connected</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
           {/* Reduced mobile text size */}
           <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
-            Utilizes the Geass intent system for user simplicity and guaranteed settlement, plus the MSAC AI agent council to bridge with external systems.
+          Geass intent engine simplifies transactions: users declare desired outcomes ('what', not 'how') for guaranteed execution. Seamlessly connects to diverse external systems and data via MSAC.
           </p>
         </div>
-         {/* Card 4: MSAC AI Council - Reverted mobile width, kept reduced gap/text */}
-         <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 max-w-xs sm:w-auto flex-1 sm:min-w-[200px] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
-          {/* Reduced mobile text size */}
-          <h3 className="font-semibold text-xs sm:text-lg text-white leading-snug">MSAC <span className="text-primary">AI Council</span></h3>
+         {/* Card 4: MSAC AI Council - Set width for 3-across layout, reduced padding & header size */}
+         <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+          {/* Reduced header text size */}
+          <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Mobius Sybil <span className="text-primary">Agentic Council</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
           {/* Reduced mobile text size */}
           <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
-            The Mobius Sybil Agentic Council acts as a secure, intelligent bridge connecting Catenary to traditional financial systems and external data sources.
+          The Mobius Sybil Agentic Council (MSAC): an intelligent agent middleware layer. Acts as a secure gateway, bridging Catenary L3 with diverse external systems for data exchange/protocol translation.
+          </p>
+        </div>
+        {/* Card 5: Programed Money - Set width for 3-across layout, reduced padding & header size */}
+        <div className="relative z-10 bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-3 max-w-xs sm:max-w-none sm:w-[30%] flex flex-col gap-1 sm:gap-3 items-center text-center transition duration-300 ease-in-out shadow-lg shadow-black/20 backdrop-blur-sm hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:p-4 to sm:p-3 */}
+          {/* Reduced header text size */}
+          <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug">Programmable <span className="text-primary">Currencies</span></h3> {/* Changed sm:text-lg to sm:text-sm */}
+          {/* Reduced mobile text size */}
+          <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
+          Issue programmable, resilient local currencies on Catenary for reliable cross-currency value transfer and representation, bringing the world's diverse economies securely onchain.
           </p>
         </div>
       </section>
@@ -155,30 +164,30 @@ export default function Home() {
         {/* Cards Container */}
         {/* Added items-center for mobile column centering */}
         <div className="w-full flex flex-col items-center sm:items-stretch sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 max-w-4xl lg:max-w-5xl"> 
-          {/* Use Case Card 1: Cross-Border Settlement - Reverted mobile width */}
-          <div className="bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 w-full max-w-xs sm:w-auto flex-1 min-w-[180px] sm:min-w-[200px] shadow-lg flex flex-col items-center text-center gap-1 sm:gap-1.5 backdrop-blur-sm transition duration-300 ease-in-out hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
+          {/* Use Case Card 1: Cross-Border Settlement - Matched width to explainer cards */}
+          <div className="bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 w-full max-w-xs sm:w-[30%] shadow-lg flex flex-col items-center text-center gap-1 sm:gap-1.5 backdrop-blur-sm transition duration-300 ease-in-out hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:w-[48%] to sm:w-[30%] */}
             {/* Reduced text size */}
             <span className="uppercase text-[10px] sm:text-[11px] text-primary tracking-wider font-semibold">For Cross-Border Settlement</span>
             {/* Reduced mobile text size */}
-            <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Overcome traditional barriers with near-instant, low-cost cross-border payments.</h3>
+            <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Overcome traditional barriers with near-instant, cross-border payments.</h3>
             {/* Reduced mobile text size */}
             <p className="text-white/80 text-[9px] sm:text-[10px] leading-relaxed">
-            Our L3 executes atomic settlements, Geass simplifies complex multi-currency flows via the native CLOB, ZK proofs ensure rapid finality, and MSAC bridges to external systems.
+            Our L3 executes atomic settlements, Geass simplifies complex multi-currency flows via the CLOB, ZK proofs ensure rapid finality, and MSAC bridges to external systems.
             </p>
           </div>
-          {/* Use Case Card 2: Asset Tokenization - Reverted mobile width */}
-          <div className="bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 w-full max-w-xs sm:w-auto flex-1 min-w-[180px] sm:min-w-[200px] shadow-lg flex flex-col items-center text-center gap-1 sm:gap-1.5 backdrop-blur-sm transition duration-300 ease-in-out hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
+          {/* Use Case Card 2: Asset Tokenization - Matched width to explainer cards */}
+          <div className="bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 w-full max-w-xs sm:w-[30%] shadow-lg flex flex-col items-center text-center gap-1 sm:gap-1.5 backdrop-blur-sm transition duration-300 ease-in-out hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:w-[48%] to sm:w-[30%] */}
             {/* Reduced text size */}
             <span className="uppercase text-[10px] sm:text-[11px] text-primary tracking-wider font-semibold">For Asset Tokenization & Trading</span>
             {/* Reduced mobile text size */}
-            <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Unlock liquidity for traditionally illiquid real-world assets like real estate or private debt.</h3>
+            <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Unlock liquidity for traditionally illiquid real-world assets.</h3>
             {/* Reduced mobile text size */}
             <p className="text-white/80 text-[9px] sm:text-[10px] leading-relaxed">
             Tokenize assets on our L3, leverage MSAC for verifiable links to off-chain data, and enable seamless fractional trading on the high-performance native CLOB.
             </p>
           </div>
-          {/* Use Case Card 3: Programmable Finance - Reverted mobile width */}
-          <div className="bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 w-full max-w-xs sm:w-auto flex-1 min-w-[180px] sm:min-w-[200px] shadow-lg flex flex-col items-center text-center gap-1 sm:gap-1.5 backdrop-blur-sm transition duration-300 ease-in-out hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8">
+          {/* Use Case Card 3: Programmable Finance - Matched width to explainer cards */}
+          <div className="bg-gradient-to-b from-primary/8 to-primary/4 border border-primary/30 rounded-2xl p-2 sm:p-4 w-full max-w-xs sm:w-[30%] shadow-lg flex flex-col items-center text-center gap-1 sm:gap-1.5 backdrop-blur-sm transition duration-300 ease-in-out hover:scale-[1.03] hover:border-primary/70 hover:shadow-xl hover:shadow-primary/20 hover:bg-gradient-to-b hover:from-primary/11 hover:to-primary/8"> {/* Changed sm:w-[48%] to sm:w-[30%] */}
             {/* Reduced text size */}
             <span className="uppercase text-[10px] sm:text-[11px] text-primary tracking-wider font-semibold">For Programmable Finance</span>
             {/* Reduced mobile text size */}
