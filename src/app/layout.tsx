@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from 'next/script'; // Import Script for JSON-LD
 import "./globals.css";
 import ClientBody from "./ClientBody";
+import { Analytics } from "@vercel/analytics/react"; // Import Vercel Analytics
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -112,6 +113,7 @@ export default function RootLayout({
           strategy="beforeInteractive" // Load early but not blocking
         />
         <ClientBody>{children}</ClientBody>
+        <Analytics /> {/* Add Vercel Analytics component */}
       </body>
     </html>
   );
