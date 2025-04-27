@@ -75,11 +75,14 @@ export default function Home() {
         <div className="relative z-10 flex flex-col items-center text-center gap-6">
           {/* Updated path to PNG logo - Increased size by 100% */}
           <Image src="/images/catenary-logo.png" alt="Catenary Logo" width={200} height={56} className="sm:w-[240px] sm:h-[68px] object-contain mb-[-10px]" />
-          {/* Responsive text size - Reduced by ~50% */}
+          {/* Responsive text size */}
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
-            Next-Gen <span style={{ color: '#ffd230' }}>Decentralized</span> Infrastructure for <span className="text-primary">Global Trade</span>
+            <span style={{ color: '#ffd230' }}>Catenary</span>
           </h1>
-          {/* Removed descriptive paragraph */}
+          {/* Added tagline placeholder */}
+          <p className="text-white/80 text-base sm:text-lg mt-2">
+            [Your tagline/summary here]
+          </p>
           {/* Responsive button size, updated link */}
           <a href="/whitepaper" className="bg-primary text-black font-semibold rounded-full px-6 py-2.5 sm:px-7 sm:py-3 mt-4 hover:scale-105 transition shadow-md shadow-primary/30"> 
             Read Whitepaper
@@ -92,7 +95,8 @@ export default function Home() {
         <div className="w-full max-w-2xl lg:max-w-3xl text-center"> {/* Centered text container */}
           <span className="text-primary font-semibold text-xs sm:text-sm uppercase">Why Catenary</span>
           <h2 className="font-bold text-2xl sm:text-3xl text-white mt-2 mb-3 sm:mb-4">Decentralizing the Monetary Layer</h2>
-          <p className="text-white/80 text-base sm:text-lg">
+          {/* Reduced font size by ~25% */}
+          <p className="text-white/80 text-sm sm:text-base"> 
             Traditional cross-border payments are often slow, costly, and complex, especially in emerging markets. Catenary addresses this with a specialized Layer 3 architecture, offering high-speed, low-cost trade settlement, efficient on-chain trading via a native CLOB, and seamless connectivity to existing financial systems through innovative protocols like Geass and MSAC.
           </p>
         </div>
