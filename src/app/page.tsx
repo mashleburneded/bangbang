@@ -81,7 +81,7 @@ export default function Home() {
           </h1>
           {/* Added tagline placeholder */}
           <p className="text-white/80 text-base sm:text-lg mt-2">
-            [Your tagline/summary here]
+            [Settlement Layer for Emerging Economies and Network States]
           </p>
           {/* Responsive button size, updated link */}
           <a href="/whitepaper" className="bg-primary text-black font-semibold rounded-full px-6 py-2.5 sm:px-7 sm:py-3 mt-4 hover:scale-105 transition shadow-md shadow-primary/30"> 
