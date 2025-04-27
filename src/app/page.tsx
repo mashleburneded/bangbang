@@ -91,7 +91,7 @@ export default function Home() {
       <section className="relative w-full flex flex-col items-center pt-16 sm:pt-24 pb-8 sm:pb-12 px-8 sm:px-6 bg-background w-full"> {/* Further increased mobile px */}
         <div className="w-full max-w-2xl lg:max-w-3xl text-center"> {/* Centered text container */}
           <span className="text-primary font-semibold text-xs sm:text-sm uppercase">Why Catenary</span>
-          <h2 className="font-bold text-2xl sm:text-3xl text-white mt-2 mb-3 sm:mb-4">Reimagining Cross-Border Finance</h2>
+          <h2 className="font-bold text-2xl sm:text-3xl text-white mt-2 mb-3 sm:mb-4">Decentralizing the Monetary Layer</h2>
           <p className="text-white/80 text-base sm:text-lg">
             Traditional cross-border payments are often slow, costly, and complex, especially in emerging markets. Catenary addresses this with a specialized Layer 3 architecture, offering high-speed, low-cost trade settlement, efficient on-chain trading via a native CLOB, and seamless connectivity to existing financial systems through innovative protocols like Geass and MSAC.
           </p>
