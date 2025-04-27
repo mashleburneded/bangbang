@@ -162,7 +162,7 @@ export default function Home() {
             {/* Reduced mobile text size */}
             <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Overcome traditional barriers with near-instant, low-cost cross-border payments.</h3>
             {/* Reduced mobile text size */}
-            <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
+            <p className="text-white/80 text-[9px] sm:text-[10px] leading-relaxed">
             Our L3 executes atomic settlements, Geass simplifies complex multi-currency flows via the native CLOB, ZK proofs ensure rapid finality, and MSAC bridges to external systems.
             </p>
           </div>
@@ -173,7 +173,7 @@ export default function Home() {
             {/* Reduced mobile text size */}
             <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Unlock liquidity for traditionally illiquid real-world assets like real estate or private debt.</h3>
             {/* Reduced mobile text size */}
-            <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
+            <p className="text-white/80 text-[9px] sm:text-[10px] leading-relaxed">
             Tokenize assets on our L3, leverage MSAC for verifiable links to off-chain data, and enable seamless fractional trading on the high-performance native CLOB.
             </p>
           </div>
@@ -184,7 +184,7 @@ export default function Home() {
             {/* Reduced mobile text size */}
             <h3 className="font-semibold text-xs sm:text-sm text-white leading-snug mt-1">Build sophisticated, automated financial services directly on Catenary.</h3>
             {/* Reduced mobile text size */}
-            <p className="text-white/80 text-[10px] sm:text-xs leading-relaxed">
+            <p className="text-white/80 text-[9px] sm:text-[10px] leading-relaxed">
             Utilize Geass intents to define complex logic for payment streams, escrows, or custom DeFi protocols, powered by our programmable L3 environment and native stablecoins.
             </p>
           </div>
