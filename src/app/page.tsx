@@ -79,9 +79,9 @@ export default function Home() {
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
             <span style={{ color: '#ffd230' }}>Catenary</span>
           </h1>
-          {/* Added tagline placeholder */}
-          <p className="text-white/80 text-base sm:text-lg mt-2">
-            [Settlement Layer for Emerging Economies and Network States]
+          {/* Added tagline placeholder, reduced top margin */}
+          <p className="text-white/80 text-base sm:text-lg mt-1.5"> 
+            Settlement Layer for Emerging Economies and Network States
           </p>
           {/* Responsive button size, updated link */}
           <a href="/whitepaper" className="bg-primary text-black font-semibold rounded-full px-6 py-2.5 sm:px-7 sm:py-3 mt-4 hover:scale-105 transition shadow-md shadow-primary/30"> 
